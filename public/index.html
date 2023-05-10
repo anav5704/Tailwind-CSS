@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TailwindCSS</title>
+</head>
+<body class="bg-anavBlack w-full m-auto text-xl text-white">
+    <nav class="p-3 flex flex-col md:flex-row justify-between md:items-center h-10v bg-anavGray relative">
+        <div class="flex justify-between items-center text-pink-500 text-2xl md:ml-6"><strong>Kant's Rental</strong><svg id="btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 cursor-pointer md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          </div>
+        <ul class="hidden md:flex justify-between mt-12 md:mt-0 absolute md:relative" id="nav">
+            <a href="index.html#home"><li class="hover:text-pink-500 transition duration-300 ease mr-6">Home</li></a>
+            <a href="index.html#cars"><li class="hover:text-pink-500 transition duration-300 ease mr-6">Cars</li></a>
+            <a href="index.html#contact"><li class="hover:text-pink-500 transition duration-300 ease mr-6">Contact</li></a>
+        </ul>
+    </nav>
+    <div id="home" class="h-90v flex justify-center items-center overflow-hidden relative border-pink-500 border-b-2">
+        <img src="img/hero.jpg" alt="" class=" absolute w-full h-full object-cover -z-10  opacity-50 object-bottom">
+        <div class="h-2/5 w-4/5 flex flex-col justify-between items-left">
+            <h1 class="text-3xl md:text-5xl">For All your <span class="text-pink-500"><strong>Rental</strong></span> Needs</h1>
+            <h3 class="text-2xl">Whether it be luxury or sport we've got it all. Known as the best car rental company on the west coast we have cars for all occasions.</h3>
+            <div>
+                <a class="" href="index.html#cars"><button class="text-xl py-2 px-4 bg-pink-500 rounded-md mx-2 hover:bg-anavGray animation duration-300 ease">Cars</button></a>
+                <a class="" href="index.html#contact"><button class="text-xl py-2 px-4 hover:bg-pink-500 rounded-md mx-2 bg-anavGray animation duration-300 ease">Contact</button></a>
+            </div>
+        </div>
+    </div>
+    <div id="cars" class="h-screen"></div>
+<script src="script.js"></script>
+</body>
+</html>
