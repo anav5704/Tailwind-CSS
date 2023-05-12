@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="img/fav.png" />
+    <title>Kant's but its TailwindCSS</title>
+  </head>
+
+  <body class="bg-anavBlack w-full m-auto text-xl text-white">
+    <nav
+      id="home"
+      class="flex flex-col md:flex-row justify-center md:justify-between md:items-center h-10v bg-anavGray relative"
+    >
+      <div
+        class="p-3 flex justify-between items-center text-pink-500 text-2xl md:ml-6"
+      >
+        <strong>Kant's Rental</strong
+        ><svg
+          id="btn"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8 cursor-pointer md:hidden"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
+      <ul
+        class="w-full bg-anavGray hidden md:w-auto md:flex justify-between top-full md:top-0 absolute md:relative z-50"
+        id="nav"
+      >
+        <a href="index.html#home">
+          <li class="p-3 hover:text-pink-500 transition duration-300 ease mr-6">
+            Home
+          </li>
+        </a>
+        <a href="index.html#cars">
+          <li class="p-3 hover:text-pink-500 transition duration-300 ease mr-6">
+            Cars
+          </li>
+        </a>
+        <a href="index.html#contact">
+          <li class="p-3 hover:text-pink-500 transition duration-300 ease mr-6">
+            Contact
+          </li>
+        </a>
+      </ul>
+    </nav>
+
+    <div
+      class="mt-10 w-11/12 md:w-3/5 mx-auto md:flex bg-anavGray rounded-lg overflow-hidden"
+    >
+      <img src="img/1.jpg" alt="" class=" object-cover md:w-1/2 opacity-80" />
+      <div class="p-3 md:w-1/2 flex flex-col justify-center">
+        <h3 class="mt-2 text-2xl">Konigsegg <strong class="text-pink-500">Regera</strong></h3>
+        <p class="">
+            ,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro laborum labore, ipsa magni alias!
+        </p>
+        <div class="my-3">
+            <div class="flex justify-between">
+                <p>Stat Name</p>
+                <p>Stat value</p>
+            </div>
+            <div class="flex justify-between">
+                <p>Stat Name</p>
+                <p>Stat value</p>
+            </div>
+            <div class="flex justify-between">
+                <p>Stat Name</p>
+                <p>Stat value</p>
+            </div>
+            <div class="flex justify-between">
+                <p>Stat Name</p>
+                <p>Stat value</p>
+            </div>
+            <div class="flex justify-between">
+                <p>Stat Name</p>
+                <p>Stat value</p>
+            </div>
+        </div>
+        <div class="flex justify-between items-center">
+          <a class="" href="car.html"
+            ><button
+              class="border-anavGray hover:border-pink-500 border-2 mt-2 text-xl py-2 px-4 bg-pink-500 rounded-md hover:bg-anavGray animation duration-300 ease"
+            >
+              Rent
+            </button></a
+          >
+          <h3 class="text-pink-500 mr-2"><strong>$700/wk</strong></h3>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-10 h-10v bg-pink-500 flex justify-center items-center">
+      <h3 class="text-anavGray"><strong>Made with 🖤 by Anav</strong></h3>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
