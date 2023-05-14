@@ -2,3 +2,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.btn-primary {
+    @apply text-xl py-2 px-4 bg-pink-500 rounded-md mx-2 hover:bg-anavGray transition duration-300;
+}
+
+.btn-secondary {
+    @apply text-xl py-2 px-4 hover:bg-pink-500 rounded-md mx-2 bg-anavGray transition duration-300;
+}
+
+.btn {
+    @apply border-anavGray hover:border-pink-500 border-2 mt-2 text-xl py-2 px-4 bg-pink-500 rounded-md hover:bg-anavGray transition duration-300;
+}
+
+
