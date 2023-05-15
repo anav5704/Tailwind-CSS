@@ -9,13 +9,48 @@
     <title>Kant's but its TailwindCSS</title>
   </head>
 
-  <body class="bg-anavBlack w-full m-auto text-xl text-white">
+  <body class="bg-anavWhite dark:bg-anavBlack w-full m-auto text-xl text-white">
+    <div
+      id="mode"
+      class="z-50 fixed bottom-5 right-5 h-12 w-12 bg-pink-500 rounded-full text-anavGray hover:text-white transitoin duration-300 p-1 cursor-pointer"
+    >
+      <svg
+        id="light"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="{1.5}"
+        stroke="currentColor"
+        className="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+        />
+      </svg>
+      <svg
+        id="dark"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+        />
+      </svg>
+    </div>
     <nav
       id="home"
-      class="flex flex-col md:flex-row justify-center md:justify-between md:items-center h-10v bg-anavGray relative"
+      class="flex flex-col md:flex-row justify-center md:justify-between md:items-center h-10v dark:bg-anavGray bg-pink-500 relative"
     >
       <div
-        class="p-3 flex justify-between items-center text-pink-500 text-2xl md:ml-6"
+        class="p-3 flex justify-between items-center text-anavGray dark:text-pink-500 text-2xl md:ml-6"
       >
         <strong>Kant's Rental</strong
         ><svg
@@ -35,7 +70,7 @@
         </svg>
       </div>
       <ul
-        class="w-full bg-anavGray hidden md:w-auto md:flex justify-between top-full md:top-0 absolute md:relative z-50"
+        class="w-full bg-pink-500 dark:bg-anavGray hidden md:w-auto md:flex justify-between top-full  md:top-0 absolute md:relative z-50"
         id="nav"
       >
         <a href="index.html#home">
@@ -57,40 +92,43 @@
     </nav>
 
     <div
-      class="mt-10 w-11/12 md:w-3/5 mx-auto md:flex bg-anavGray rounded-lg overflow-hidden"
+      class="mt-10 w-11/12 md:w-3/5 mx-auto md:flex text-anavGray dark:text-white dark:bg-anavGray rounded-lg overflow-hidden shadow-lg "
     >
-      <img src="img/1.jpg" alt="" class=" object-cover md:w-1/2 opacity-80" />
+      <img src="img/1.jpg" alt="" class="object-cover md:w-1/2 " />
       <div class="p-3 md:w-1/2 flex flex-col justify-center">
-        <h3 class="mt-2 text-2xl">Konigsegg <strong class="text-pink-500">Regera</strong></h3>
+        <h3 class="mt-2 text-2xl">
+          Konigsegg <strong class="text-pink-500">Regera</strong>
+        </h3>
         <p class="">
-            ,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro laborum labore, ipsa magni alias!
+          ,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro
+          laborum labore, ipsa magni alias!
         </p>
         <div class="my-3">
-            <div class="flex justify-between">
-                <p>Stat Name</p>
-                <p>Stat value</p>
-            </div>
-            <div class="flex justify-between">
-                <p>Stat Name</p>
-                <p>Stat value</p>
-            </div>
-            <div class="flex justify-between">
-                <p>Stat Name</p>
-                <p>Stat value</p>
-            </div>
-            <div class="flex justify-between">
-                <p>Stat Name</p>
-                <p>Stat value</p>
-            </div>
-            <div class="flex justify-between">
-                <p>Stat Name</p>
-                <p>Stat value</p>
-            </div>
+          <div class="flex justify-between">
+            <p>Stat Name</p>
+            <p>Stat value</p>
+          </div>
+          <div class="flex justify-between">
+            <p>Stat Name</p>
+            <p>Stat value</p>
+          </div>
+          <div class="flex justify-between">
+            <p>Stat Name</p>
+            <p>Stat value</p>
+          </div>
+          <div class="flex justify-between">
+            <p>Stat Name</p>
+            <p>Stat value</p>
+          </div>
+          <div class="flex justify-between">
+            <p>Stat Name</p>
+            <p>Stat value</p>
+          </div>
         </div>
         <div class="flex justify-between items-center">
           <a class="" href="car.html"
             ><button
-              class="border-anavGray hover:border-pink-500 border-2 mt-2 text-xl py-2 px-4 bg-pink-500 rounded-md hover:bg-anavGray animation duration-300 ease"
+              class="btn"
             >
               Rent
             </button></a
@@ -100,8 +138,8 @@
       </div>
     </div>
 
-    <footer class="mt-10 h-10v bg-pink-500 flex justify-center items-center">
-      <h3 class="text-anavGray"><strong>Made with 🖤 by Anav</strong></h3>
+    <footer class="mt-10 h-10v bg-anavGray text-white dark:text-anavGray dark:bg-pink-500 flex justify-center items-center">
+      <h3 class=""><strong>Made with 🖤 by Anav</strong></h3>
     </footer>
     <script src="script.js"></script>
   </body>
