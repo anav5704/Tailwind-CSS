@@ -1,6 +1,6 @@
 # Car Rentals 🚗
 
-![hero](https://anav5704/Tailwinnd-CSS/blob/main/docs/kants-tailwind.png)
+![hero](https://github.com/anav5704/Tailwind-CSS/blob/main/docs/kants-tailwind.png)
 
 This is a simple car rental website. There is not much on the website itself as this was my first go at TailwinndCSS. It is absolutely amazing and web development wouln't be nearly as fun as it is without it. Using it for the first time was very uncomfortable but once you get used to it, you can't go back.
 
