@@ -11,11 +11,10 @@ This is a simple car rental website. There is not much on the website itself as 
 
 ## Getting Started
 
-First fork and clone the repo. First run ```npm install``` to download all the dependencies. Once that is done, run ```npm start``` to view it on localhost.
+First fork and clone the repo. Then, run ```npm install``` to download all the dependencies. Once that is done, run ```npm start``` to view it on localhost.
 
 ## Learning Resources
 
 - [TailwinndCSS in 100 seconds](https://www.youtube.com/watch?v=mr15Xzb1Ook)
 - [TailwinndCSS basics tutorial](https://www.youtube.com/watch?v=pfaSUYaSgRo)
 - [TailwinndCSS Nike website](https://www.youtube.com/watch?v=tS7upsfuxmo)
-
